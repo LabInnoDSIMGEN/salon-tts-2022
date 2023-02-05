@@ -16,11 +16,11 @@ WA.onInit().then(() => {
         const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("clockPopup", "Il est : " + time, []);
     })
+//trouver le chemin relatif des tilesets
+currentPopup = WA.ui.openPopup("welcomePopup", `<img src="https://goopics.net/i/sc0gps" alt="Welcome image">`, []);
 
-    WA.room.onEnterLayer('welcomeZone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("welcomePopup","Bienvenue à notre environnement de présentation Time To Share, consultez les panneaux d'indication pour vous guider",[]);
-    })
 
+   // currentPopup = WA.ui.openPopup("welcomePopup", `<img src="" alt="Welcome image">`, []);
 
     WA.room.area.onLeave('clock').subscribe(closePopup)
     WA.room.onLeaveLayer('welcomeZone').subscribe(closePopup)
