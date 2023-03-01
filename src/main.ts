@@ -17,7 +17,7 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("clockPopup", "Il est : " + time, []);
     })
 //trouver le chemin relatif des tilesets
-currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au salon TTS, dirigez-vous avec des panneaux", []);
+//currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au salon TTS, dirigez-vous avec des panneaux", []);
 
 
    // currentPopup = WA.ui.openPopup("welcomePopup", `<img src="" alt="Welcome image">`, []);
