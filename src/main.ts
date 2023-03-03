@@ -38,8 +38,6 @@ WA.onInit().then(() => {
         );
     });
 
-
-
     //trouver le chemin relatif des tilesets
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au LAB Hours du LAB Inno", []);
