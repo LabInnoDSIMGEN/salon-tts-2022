@@ -2,7 +2,7 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 import * as FileSaver from 'file-saver';
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-import * as ics from 'ics'
+//import * as ics from 'ics'
 console.log('Script started successfully');
 
 let currentPopup: any = undefined;
