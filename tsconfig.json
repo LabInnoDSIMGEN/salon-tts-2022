@@ -3,6 +3,7 @@
     "outDir": "./dist/",
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "downlevelIteration": true,
     "module": "ESNext",
     "lib": [
       "ESNext",

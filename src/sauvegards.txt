@@ -21,20 +21,20 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('calendrierZone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
-            "calendrierPopup",
-            "Telechargez le ICS",
-            [{ label: "Download ICS", className: "primary", callback: () => { createDownloadICSFile(
-                    'America/Los_Angeles',
-                    new Date('Jan 1, 2020 08:00 PST'),
-                    new Date('Jan 4, 2020 17:00 PST'),
-                    'Example Event',
-                    'This is the event description',
-                    'Washington State Convention Center',
-                    '705 Pike St',
-                    'Seattle',
-                    'WA');
+        "calendrierPopup",
+        "Telechargez le ICS",
+        [{ label: "Download ICS", className: "primary", callback: () => { createDownloadICSFile(
+            'America/Los_Angeles',
+            new Date('Jan 1, 2020 08:00 PST'),
+            new Date('Jan 4, 2020 17:00 PST'),
+            'Example Event',
+            'This is the event description',
+            'Washington State Convention Center',
+            '705 Pike St',
+            'Seattle',
+            'WA');
 
-                }}]
+        }}]
         );
     });
 
