@@ -24,7 +24,7 @@ WA.onInit().then(() => {
             "calendrierPopup",
             "Telechargez le ICS",
             [{ label: "Download ICS", className: "primary", callback: () => { createDownloadICSFile(
-                    'America/Los_Angeles',
+                    'Europe/Paris',
                     new Date('Jan 1, 2020 08:00 PST'),
                     new Date('Jan 4, 2020 17:00 PST'),
                     'Example Event',
@@ -44,7 +44,7 @@ WA.onInit().then(() => {
     });
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
-    WA.room.area.onLeave('calendrier').subscribe(closePopup);
+    WA.room.area.onLeave('calendrierZone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
