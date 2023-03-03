@@ -56,12 +56,8 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function download(filename: string, fileBody: string) {
-    const blob = new Blob([fileBody], { type: "text/calendar;charset=utf-8" });
-    const link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = filename;
-    link.click();
+function download(fileBody: string) {
+    WA.nav.openTab('data:text/calendar;charset=utf-8,' + encodeURIComponent(fileBody));
 }
 
 function convertToICSDate(dateTime: Date): string {
@@ -99,7 +95,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
         'END:VEVENT\n' +
         'END:VCALENDAR\n';
 
-    download(title + '.ics', icsBody);
+    download(icsBody);
     const blob = new Blob([icsBody], { type: 'text/calendar;charset=utf-8' });
     FileSaver.saveAs(blob, title + '.ics');
 }
