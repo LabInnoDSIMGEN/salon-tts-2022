@@ -98,20 +98,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
     FileSaver.saveAs(blob, title + '.ics');
 }
 
-document.getElementById('downloadICS')?.addEventListener('click', () => {
-    createDownloadICSFile(
-        'America/Los_Angeles',
-        new Date('Jan 1, 2020 08:00 PST'),
-        new Date('Jan 4, 2020 17:00 PST'),
-        'Example Event',
-        'This is the event description',
-        'Washington State Convention Center',
-        '705 Pike St',
-        'Seattle',
-        'WA'
-    );
 
-});
 
 function closePopup() {
     if (currentPopup !== undefined) {
