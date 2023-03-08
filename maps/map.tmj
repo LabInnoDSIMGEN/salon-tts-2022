@@ -1840,7 +1840,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Appuyez sur ESPACE pour visionner le replay du TTS 6.3"
+                         "value":"Appuyez sur ESPACE pour visionner le replay du TTS 6.3 : Intelligence Artificielle - Passage \u00e0 l'echelle"
                         }],
                  "rotation":0,
                  "visible":true,
@@ -1872,7 +1872,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Appuyez sur ESPACE pour acc\u00e9der \u00e0 l'article "
+                         "value":"Appuyez sur ESPACE pour acc\u00e9der \u00e0 l'article Intelligence Artificielle - Passage \u00e0 l'echelle"
                         }],
                  "rotation":0,
                  "visible":true,
