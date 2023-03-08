@@ -54,7 +54,7 @@ TRANSP:TRANSPARENT
 DTSTART;TZID=`+t+":"+x(e)+`
 DTEND;TZID=`+t+":"+x(n)+`
 DTSTAMP:`+x(new Date)+`
-LOCATION:`+a+"\\n"+s+", "+i+`, 
+LOCATION:`+a+"\\n "+s+",  "+i+`, 
 DESCRIPTION:`+o+`
 END:VEVENT
 END:VCALENDAR
