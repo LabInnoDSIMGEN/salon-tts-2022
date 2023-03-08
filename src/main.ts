@@ -18,33 +18,71 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("clockPopup", "Il est : " + time, []);
     });
 
-
-    WA.room.area.onEnter('calendrierZone').subscribe(() => {
+    WA.room.area.onEnter('tts6.3Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
-            "calendrierPopup",
-            "Telechargez le ICS",
-            [{ label: "Download ICS", className: "primary", callback: () => { createDownloadICSFile(
-                    'Europe/Paris',
-                    new Date('Jan 1, 2020 08:00 PST'),
-                    new Date('Jan 4, 2020 17:00 PST'),
-                    'Example Event',
-                    'This is the event description',
-                    'Washington State Convention Center',
-                    '705 Pike St',
-                    'Seattle',
-                    'WA');
+            "tts6.3Popup",
+            "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI",
+            [
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
 
-                }}]
+    WA.room.area.onEnter('tts10Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts10Popup",
+            "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
+            [
+            { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+            { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
+
+    WA.room.area.onEnter('tts11Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts11Popup",
+            "TTS 11 \n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN",
+            [{ label: "Rendez-vous avec \n Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => { 
+                createDownloadICSFile(
+                    'Europe/Paris',
+                    new Date('Mar 27, 2023 14:00'),
+                    new Date('Mar 27, 2023 15:00'),
+                    'TTS 11',
+                    'Services dans le Cloud, introduction et notre utilisation à venir',
+                    'Salon des TTS',
+                    'DSI MGEN',
+                    'Metavers'
+                    );
+                }},
+            
+                { label: "Rendez-vous avec \n Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => { 
+                    createDownloadICSFile(
+                        'Europe/Paris',
+                        new Date('Mar 30, 2023 10:00'),
+                        new Date('Mar 30, 2023 11:00'),
+                        'TTS 11',
+                        'Services dans le Cloud, introduction et notre utilisation à venir',
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                        );
+                    }},
+                    
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
+                ]
         );
     });
 
     //trouver le chemin relatif des tilesets
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au LAB Hours du LAB Inno", []);
+        currentPopup = WA.ui.openPopup("welcomePopup", 
+        "Bienvenue au LAB Hours du LAB Inno",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
     });
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
-    WA.room.area.onLeave('calendrierZone').subscribe(closePopup);
+    WA.room.area.onLeave('tts6.3Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts10Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts11Zone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
@@ -70,7 +108,7 @@ function convertToICSDate(dateTime: Date): string {
 
 function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
                                title: string, description: string, venueName: string,
-                               address: string, city: string, state: string) {
+                               address: string, city: string) {
     const icsBody = 'BEGIN:VCALENDAR\n' +
         'VERSION:2.0\n' +
         'PRODID:Calendar\n' +
@@ -88,7 +126,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
         'DTSTART;TZID=' + timezone + ':' + convertToICSDate(startTime) + '\n' +
         'DTEND;TZID=' + timezone + ':' + convertToICSDate(endTime)+ '\n' +
         'DTSTAMP:'+ convertToICSDate(new Date()) + '\n' +
-        'LOCATION:' + venueName + '\\n' + address + ', ' + city + ', ' + state + '\n' +
+        'LOCATION:' + venueName + '\\n' + address + ', ' + city + ', ' + '\n' +
         'DESCRIPTION:' + description + '\n' +
         'END:VEVENT\n' +
         'END:VCALENDAR\n';
@@ -97,8 +135,6 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
     const blob = new Blob([icsBody], { type: 'text/calendar;charset=utf-8' });
     FileSaver.saveAs(blob, title + '.ics');
 }
-
-
 
 function closePopup() {
     if (currentPopup !== undefined) {
