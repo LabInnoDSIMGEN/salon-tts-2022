@@ -81,7 +81,7 @@ WA.onInit().then(() => {
                 createDownloadICSFile(
                     'Europe/Paris',
                     new Date('Mar 29, 2023 10:00'),
-                    new Date('Mar 27, 2023 11:00'),
+                    new Date('Mar 29, 2023 11:00'),
                     'TTS 12',
                     "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
                     'Salon des TTS',
@@ -153,7 +153,9 @@ function convertToICSDate(dateTime: Date): string {
 function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
                                title: string, description: string, venueName: string,
                                address: string, city: string) {
-    const icsBody = 'BEGIN:VCALENDAR\n' +
+    const icsBody = 
+        'BEGIN:VCALENDAR\n' +
+        'X-WR-TIMEZONE:Europe/Paris\n' +
         'VERSION:2.0\n' +
         'PRODID:Calendar\n' +
         'CALSCALE:GREGORIAN\n' +
