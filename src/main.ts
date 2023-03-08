@@ -172,7 +172,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
         'DTSTART;TZID=' + timezone + ':' + convertToICSDate(startTime) + '\n' +
         'DTEND;TZID=' + timezone + ':' + convertToICSDate(endTime)+ '\n' +
         'DTSTAMP:'+ convertToICSDate(new Date()) + '\n' +
-        'LOCATION:' + venueName + '\\n' + address + ', ' + city + ', ' + '\n' +
+        'LOCATION:' + venueName + '\\n' + " " + address + ', ' + " " + city + ', ' + '\n' +
         'DESCRIPTION:' + description + '\n' +
         'END:VEVENT\n' +
         'END:VCALENDAR\n';
