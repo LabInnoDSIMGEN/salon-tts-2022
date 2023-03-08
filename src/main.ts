@@ -73,6 +73,48 @@ WA.onInit().then(() => {
         );
     });
 
+    WA.room.area.onEnter('tts12Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts12Popup",
+            "TTS 12 \n Présenté par \n Roxanne SPIES",
+            [{ label: "Rendez-vous avec \n Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => { 
+                createDownloadICSFile(
+                    'Europe/Paris',
+                    new Date('Mar 29, 2023 10:00'),
+                    new Date('Mar 27, 2023 11:00'),
+                    'TTS 12',
+                    "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
+                    'Salon des TTS',
+                    'DSI MGEN',
+                    'Metavers'
+                    );
+                }},
+
+                { label: "Rendez-vous avec \n Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => { 
+                    createDownloadICSFile(
+                        'Europe/Paris',
+                        new Date('Mar 30, 2023 16:30'),
+                        new Date('Mar 30, 2023 17:30'),
+                        'TTS 12',
+                        "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                        );
+                    }},
+                    
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
+                ]
+        );
+    });
+
+    WA.room.area.onEnter('officeZone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "officePopup", 
+            "Venez ici pour échanger avec l'équipe du Lab Inno",  
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
     //trouver le chemin relatif des tilesets
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("welcomePopup", 
@@ -83,6 +125,8 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('tts6.3Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts10Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts11Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts12Zone').subscribe(closePopup);
+    WA.room.area.onLeave('officeZone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
