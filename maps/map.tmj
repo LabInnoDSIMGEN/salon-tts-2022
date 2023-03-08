@@ -1860,9 +1860,14 @@
                          "value":true
                         }, 
                         {
-                         "name":"openWebsite",
+                         "name":"openTab",
                          "type":"string",
                          "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-63-intelligence-artificielle-passage-a-lechelle"
+                        }, 
+                        {
+                         "name":"openWebsitePolicy",
+                         "type":"string",
+                         "value":"fullscreen"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
