@@ -2180,7 +2180,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Appuyez sur ESPACE pour visionner le replay du TTS 12 : Design System et DesignOps, quand le Design s'op\u00e9rationnalise et s'adpte au mode Agile"
+                         "value":"Appuyez sur ESPACE pour visionner le replay du TTS 12 : Design System et DesignOps, quand le Design s'op\u00e9rationnalise et s'adapte au mode Agile"
                         }],
                  "rotation":0,
                  "visible":true,
@@ -2217,7 +2217,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Appuyez sur ESPACE pour acc\u00e9der \u00e0 l'article TTS 12 : Design System et DesignOps, quand le Design s'op\u00e9rationnalise et s'adpte au mode Agile"
+                         "value":"Appuyez sur ESPACE pour acc\u00e9der \u00e0 l'article TTS 12 : Design System et DesignOps, quand le Design s'op\u00e9rationnalise et s'adapte au mode Agile"
                         }],
                  "rotation":0,
                  "visible":true,
