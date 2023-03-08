@@ -1840,13 +1840,45 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Appuyez sur ESPACE our visionner le replay du TTS 6.3"
+                         "value":"Appuyez sur ESPACE pour visionner le replay du TTS 6.3"
                         }],
                  "rotation":0,
                  "visible":true,
                  "width":91.9511273460133,
-                 "x":933.366922786245,
-                 "y":581.937271696687
+                 "x":930.847713817861,
+                 "y":580.677667212495
+                }, 
+                {
+                 "class":"area",
+                 "height":86.9127094092456,
+                 "id":45,
+                 "name":"tts6.3Sharepoint",
+                 "properties":[
+                        {
+                         "name":"dynamic",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-63-intelligence-artificielle-passage-a-lechelle"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE pour acc\u00e9der \u00e0 l'article "
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":117.143217029852,
+                 "x":1257.08527522358,
+                 "y":598.312129991183
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2520,7 +2552,7 @@
          "y":0
         }],
  "nextlayerid":72,
- "nextobjectid":45,
+ "nextobjectid":46,
  "orientation":"orthogonal",
  "properties":[
         {
