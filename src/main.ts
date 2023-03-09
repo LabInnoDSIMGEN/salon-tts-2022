@@ -21,7 +21,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts6.3Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts6.3Popup",
-            "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI",
+            "TTS 6.3 : \n Intelligence artificielle - passage à l'échelle  \n Présenté par \n Stéphane Maréchal \n CGI",
             [
                 { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -31,7 +31,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts10Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts10Popup",
-            "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
+            "TTS 10 :\n Feedback API Program 2021 Horizon Plan 2022 - API Gouvernane \n Présenté par \n Aklesso TCHAKPELE",
             [
             { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
             { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -41,7 +41,8 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts11Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts11Popup",
-            "TTS 11 \n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN",
+            "TTS 11 : \n Services dans le Cloud, introduction et notre utilisation à venir " +
+            "\n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN",
             [{ label: "Rendez-vous avec \n Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => { 
                 createDownloadICSFile(
                     'Europe/Paris',
@@ -427,7 +428,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
                                address: string, city: string) {
     const icsBody = 
         'BEGIN:VCALENDAR\n' +
-        'X-WR-TIMEZONE:Europe/Paris\n' +
+        'X-WR-TIMEZONE:\n' +
         'VERSION:2.0\n' +
         'PRODID:Calendar\n' +
         'CALSCALE:GREGORIAN\n' +
