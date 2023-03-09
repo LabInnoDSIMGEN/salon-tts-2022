@@ -2,7 +2,7 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 import * as FileSaver from 'file-saver';
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-//import * as ics from 'ics'
+
 console.log('Script started successfully');
 
 let currentPopup: any = undefined;
@@ -21,7 +21,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts6.3Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts6.3Popup",
-            "TTS 6.3 : \n Intelligence artificielle - passage à l'échelle  \n Présenté par \n Stéphane Maréchal \n CGI",
+            "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI",
             [
                 { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -31,7 +31,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts10Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts10Popup",
-            "TTS 10 :\n Feedback API Program 2021 Horizon Plan 2022 - API Gouvernane \n Présenté par \n Aklesso TCHAKPELE",
+            "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
             [
             { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
             { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -41,9 +41,9 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts11Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts11Popup",
-            "TTS 11 : \n Services dans le Cloud, introduction et notre utilisation à venir " +
-            "\n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN",
-            [{ label: "Rendez-vous avec \n Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => { 
+            "TTS 11 \n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN\n" +
+            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : ",
+            [{ label: "Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => {
                 createDownloadICSFile(
                     'Romance Standard Time',
                     new Date('Mar 27, 2023 14:00'),
@@ -56,7 +56,7 @@ WA.onInit().then(() => {
                     );
                 }},
             
-                { label: "Rendez-vous avec \n Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => { 
+                { label: "Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
                         new Date('Mar 30, 2023 10:00'),
@@ -69,16 +69,16 @@ WA.onInit().then(() => {
                         );
                     }},
                     
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
-                ]
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
 
     WA.room.area.onEnter('tts12Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts12Popup",
-            "TTS 12 \n Présenté par \n Roxanne SPIES",
-            [{ label: "Rendez-vous avec \n Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => { 
+            "TTS 12 \n Présenté par \n Roxanne SPIES \n" +
+            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : ",
+            [{ label: "Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => {
                 createDownloadICSFile(
                     'Romance Standard Time',
                     new Date('Mar 29, 2023 10:00'),
@@ -91,7 +91,7 @@ WA.onInit().then(() => {
                     );
                 }},
 
-                { label: "Rendez-vous avec \n Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => { 
+                { label: "Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
                         new Date('Mar 30, 2023 16:30'),
@@ -104,23 +104,87 @@ WA.onInit().then(() => {
                         );
                     }},
                     
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
-                ]
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
 
     WA.room.area.onEnter('tts13Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
-            "tts13Popup",
-            "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod",
-            [{ label: "Echangez avec \n Cyril Carrillat \n" +
-                    "Lundi 27 Mars \n " +
-                    "14h-15h",
-                className: "primary", callback: () => {
+        "tts13Popup",
+        "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n" +
+        "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :",
+        [{
+            label: "Cyril Carrillat \n Lundi 27 Mars \n14h-15h",
+            className: "primary",
+            callback: () => {
+                createDownloadICSFile(
+                    'Romance Standard Time',
+                    new Date('Mar 27, 2023 14:00'),
+                    new Date('Mar 27, 2023 15:00'),
+                    'TTS 13',
+                    "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                    'Salon des TTS',
+                    'DSI MGEN',
+                    'Metavers'
+                );
+            }
+        },
+
+            {
+                label: "Cyril Carrillat\nMercredi 29 Mars \n14h-15h",
+                className: "primary",
+                callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
-                        new Date('Mar 27, 2023 14:00'),
-                        new Date('Mar 27, 2023 15:00'),
+                        new Date('Mar 29, 2023 14:00'),
+                        new Date('Mar 29, 2023 15:00'),
+                        'TTS 13',
+                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                    );
+                }
+            },
+            {
+                label: "Cyril Carrillat\nMercredi 29 Mars \n14h-15h",
+                className: "primary",
+                callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 29, 2023 14:00'),
+                        new Date('Mar 29, 2023 15:00'),
+                        'TTS 13',
+                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                    );
+                }
+            },
+            {
+                label: "Cyril Carrillat\nMercredi 30 Mars \n10h-11h",
+                className: "primary",
+                callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 30, 2023 10:00'),
+                        new Date('Mar 30, 2023 11:00'),
+                        'TTS 13',
+                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                    );
+                }
+            },
+
+            { label:"Cyril Carrillat\n" +
+                    "Mercredi 31 Mars \n 10h-11h", className: "primary", callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 31, 2023 10:00'),
+                        new Date('Mar 31, 2023 11:00'),
                         'TTS 13',
                         "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
                         'Salon des TTS',
@@ -128,72 +192,15 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }},
-
-                { label: "Echangez avec \n Cyril Carrillat\n " +
-                        "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
-                        createDownloadICSFile(
-                            'Romance Standard Time',
-                            new Date('Mar 29, 2023 14:00'),
-                            new Date('Mar 29, 2023 15:00'),
-                            'TTS 13',
-                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                            'Salon des TTS',
-                            ' DSI MGEN',
-                            'Metavers'
-                        );
-                    }},
-
-                { label:"Echangez avec \n Cyril Carrillat\n" +
-                        "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
-                        createDownloadICSFile(
-                            'Romance Standard Time',
-                            new Date('Mar 29, 2023 14:00'),
-                            new Date('Mar 29, 2023 15:00'),
-                            'TTS 13',
-                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                            'Salon des TTS',
-                            ' DSI MGEN',
-                            'Metavers'
-                        );
-                    }},
-
-                { label:"Echangez avec \n Cyril Carrillat\n" +
-                        "Mercredi 30 Mars \n 10h-11h", className: "primary", callback: () => {
-                        createDownloadICSFile(
-                            'Romance Standard Time',
-                            new Date('Mar 30, 2023 10:00'),
-                            new Date('Mar 30, 2023 11:00'),
-                            'TTS 13',
-                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                            'Salon des TTS',
-                            ' DSI MGEN',
-                            'Metavers'
-                        );
-                    }},
-
-                { label:"Echangez avec \n Cyril Carrillat\n" +
-                        "Mercredi 31 Mars \n 10h-11h", className: "primary", callback: () => {
-                        createDownloadICSFile(
-                            'Romance Standard Time',
-                            new Date('Mar 31, 2023 10:00'),
-                            new Date('Mar 31, 2023 11:00'),
-                            'TTS 13',
-                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                            'Salon des TTS',
-                            ' DSI MGEN',
-                            'Metavers'
-                        );
-                    }},
-
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
-            ]
+            { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
 
     WA.room.area.onEnter('tts14Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts14Popup",
-            "TTS 14 : Web analytics : \n découvrez son fonctionnement et ses enjeux  \n Présenté par \n Quentin Montcharmont",
+            "TTS 14 : Web analytics : \n découvrez son fonctionnement et ses enjeux  \n Présenté par \n Quentin Montcharmont \n" +
+            "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
                 { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -207,7 +214,8 @@ WA.onInit().then(() => {
             + "\n Présenté par \n Ahmed FATHALLAH"
             + "\n Andrada COVACI"
             + "\n Sébastien SAURON"
-            + "\n Jean-Baptiste RAINSART",
+            + "\n Jean-Baptiste RAINSART \n" +
+            "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
                 { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
@@ -222,9 +230,10 @@ WA.onInit().then(() => {
             + "\n Hakim RANDRIANARIVO"
             + "\n Céline LECLEIRE"
             + "\n Romain BOURGON"
-            + "\n Steven YVEN",
+            + "\n Steven YVEN \n"
+            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible : \n",
             [
-                { label: "Disponibilités à venir", className: "primary", callback: () => {closePopup()}},
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
@@ -235,13 +244,124 @@ WA.onInit().then(() => {
             "TTS 17.1 : \n Les tendances en e-santé : Les thérapies Digitales (DTx)"
             + "\n Présenté par \n Alizée SEGARD"
             + "\n Alix D'ARCHIMBAUD"
-            + "\n Virginie FEMERY",
+            + "\n Virginie FEMERY \n"
+            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                {
+                    label: "Carlos GONCALVES\nMercredi 29 Mars \n14h-15h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 29, 2023 14:00'),
+                            new Date('Mar 29, 2023 15:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Carlos GONCALVES\nMercredi 31 Mars \n11h-12h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 31, 2023 11:00'),
+                            new Date('Mar 31, 2023 12:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Romain BOURGON\nLundi 27 Mars \n14h-15h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 31, 2023 14:00'),
+                            new Date('Mar 31, 2023 15:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Romain BOURGON\nLundi 29 Mars \n14h-15h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 29, 2023 14:00'),
+                            new Date('Mar 29, 2023 15:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Romain BOURGON\nLundi 31 Mars \n11h-12h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 31, 2023 11:00'),
+                            new Date('Mar 31, 2023 12:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Steven YVEN\nLundi 29 Mars \n14h-15h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 29, 2023 14:00'),
+                            new Date('Mar 29, 2023 15:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Steven YVEN\nLundi 31 Mars \n11h-12h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 31, 2023 11:00'),
+                            new Date('Mar 31, 2023 12:00'),
+                            'TTS 17.1',
+                            "La Data Science au service des métiers et au cœur de la transformation MGEN",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
-
 
                 WA.room.area.onEnter('officeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
@@ -344,7 +464,7 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('librarySignTTS6.2').subscribe(() => {
         currentPopup = WA.ui.openPopup("librarySignPopupTTS6.2",
-            "Ressources de TTS N°8 : L'écosystéme des applications mobile MGEN\n" +
+            "Ressources de TTS N°6.2 : L'écosystéme des applications mobile MGEN\n" +
             "Intervenants : Amine BENHENNI\n" +
             "(expert stratégie et exécution DATA & IA)\n" +
             "Christophe GAZEAU \n" +
@@ -463,5 +583,9 @@ function closePopup() {
 }
 
 export {};
+
+
+
+
 
 
