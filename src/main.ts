@@ -199,7 +199,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts14Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts14Popup",
-            "TTS 14 : Web analytics : \n découvrez son fonctionnement et ses enjeux  \n Présenté par \n Quentin Montcharmont \n" +
+            "TTS 14 : \n Présenté par \n Quentin Montcharmont \n" +
             "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
                 { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
@@ -210,7 +210,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts15Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts15Popup",
-            "TTS 15 : \n L'automatisation intelligente au service des collaborateurs"
+            "TTS 15 : \n"
             + "\n Présenté par \n Ahmed FATHALLAH"
             + "\n Andrada COVACI"
             + "\n Sébastien SAURON"
@@ -225,7 +225,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts16Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts16Popup",
-            "TTS 16 : \n La Data Science au service des métiers et au cœur de la transformation MGEN"
+            "TTS 16 : \n "
             + "\n Présenté par \n Carlos GONCALVES"
             + "\n Hakim RANDRIANARIVO"
             + "\n Céline LECLEIRE"
@@ -241,8 +241,8 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts17.1Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts17.1Popup",
-            "TTS 17.1 : \n Les tendances en e-santé : Les thérapies Digitales (DTx)"
-            + "\n Présenté par \n Alizée SEGARD"
+            "TTS 17.1 :\n"
+            + " Présenté par \n Alizée SEGARD"
             + "\n Alix D'ARCHIMBAUD"
             + "\n Virginie FEMERY \n"
             + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
@@ -359,7 +359,7 @@ WA.onInit().then(() => {
                         );
                     }
                 },
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+            ]
         );
     });
 
@@ -487,7 +487,32 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("welcomePopup",
-            "Bienvenue au LAB Hours du LAB Inno",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            "Bienvenue au LAB Hours du LAB Inno \n" +
+            "\n" +
+            "\n" +
+            "La zone rouge permet d'acceder aux Replays d'un TTS \n" +
+            "La zone jaune permet d'acceder a l'article d'un TTS \n" +
+            "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
+            "\n" +
+            "\n" +
+            "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
+            "de votre clavier",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('welcomeZone2').subscribe(() => {
+        currentPopup = WA.ui.openPopup("welcomePopup2",
+            "Bienvenue au LAB Hours du LAB Inno \n" +
+            "\n" +
+            "\n" +
+            "La zone rouge permet d'acceder aux Replays d'un TTS \n" +
+            "La zone jaune permet d'acceder a l'article d'un TTS \n" +
+            "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
+            "\n" +
+            "\n" +
+            "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
+            "de votre clavier",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
     });
 
     WA.room.area.onEnter('libraryIndication').subscribe(() => {
@@ -510,6 +535,7 @@ WA.onInit().then(() => {
 
     WA.room.area.onLeave('officeZone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
+    WA.room.area.onLeave('welcomeZone2').subscribe(closePopup);
     WA.room.area.onLeave('libraryIndication').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS1').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS2').subscribe(closePopup);
