@@ -45,7 +45,7 @@ WA.onInit().then(() => {
             "\n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN",
             [{ label: "Rendez-vous avec \n Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => { 
                 createDownloadICSFile(
-                    'Europe/Paris',
+                    'Romance Standard Time',
                     new Date('Mar 27, 2023 14:00'),
                     new Date('Mar 27, 2023 15:00'),
                     'TTS 11',
@@ -58,7 +58,7 @@ WA.onInit().then(() => {
             
                 { label: "Rendez-vous avec \n Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => { 
                     createDownloadICSFile(
-                        'Europe/Paris',
+                        'Romance Standard Time',
                         new Date('Mar 30, 2023 10:00'),
                         new Date('Mar 30, 2023 11:00'),
                         'TTS 11',
@@ -80,7 +80,7 @@ WA.onInit().then(() => {
             "TTS 12 \n Présenté par \n Roxanne SPIES",
             [{ label: "Rendez-vous avec \n Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => { 
                 createDownloadICSFile(
-                    'Europe/Paris',
+                    'Romance Standard Time',
                     new Date('Mar 29, 2023 10:00'),
                     new Date('Mar 29, 2023 11:00'),
                     'TTS 12',
@@ -93,7 +93,7 @@ WA.onInit().then(() => {
 
                 { label: "Rendez-vous avec \n Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => { 
                     createDownloadICSFile(
-                        'Europe/Paris',
+                        'Romance Standard Time',
                         new Date('Mar 30, 2023 16:30'),
                         new Date('Mar 30, 2023 17:30'),
                         'TTS 12',
@@ -118,7 +118,7 @@ WA.onInit().then(() => {
                     "14h-15h",
                 className: "primary", callback: () => {
                     createDownloadICSFile(
-                        'Europe/Paris',
+                        'Romance Standard Time',
                         new Date('Mar 27, 2023 14:00'),
                         new Date('Mar 27, 2023 15:00'),
                         'TTS 13',
@@ -132,7 +132,7 @@ WA.onInit().then(() => {
                 { label: "Echangez avec \n Cyril Carrillat\n " +
                         "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
                         createDownloadICSFile(
-                            'Europe/Paris',
+                            'Romance Standard Time',
                             new Date('Mar 29, 2023 14:00'),
                             new Date('Mar 29, 2023 15:00'),
                             'TTS 13',
@@ -146,7 +146,7 @@ WA.onInit().then(() => {
                 { label:"Echangez avec \n Cyril Carrillat\n" +
                         "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
                         createDownloadICSFile(
-                            'Europe/Paris',
+                            'Romance Standard Time',
                             new Date('Mar 29, 2023 14:00'),
                             new Date('Mar 29, 2023 15:00'),
                             'TTS 13',
@@ -160,7 +160,7 @@ WA.onInit().then(() => {
                 { label:"Echangez avec \n Cyril Carrillat\n" +
                         "Mercredi 30 Mars \n 10h-11h", className: "primary", callback: () => {
                         createDownloadICSFile(
-                            'Europe/Paris',
+                            'Romance Standard Time',
                             new Date('Mar 30, 2023 10:00'),
                             new Date('Mar 30, 2023 11:00'),
                             'TTS 13',
@@ -174,7 +174,7 @@ WA.onInit().then(() => {
                 { label:"Echangez avec \n Cyril Carrillat\n" +
                         "Mercredi 31 Mars \n 10h-11h", className: "primary", callback: () => {
                         createDownloadICSFile(
-                            'Europe/Paris',
+                            'Romance Standard Time',
                             new Date('Mar 31, 2023 10:00'),
                             new Date('Mar 31, 2023 11:00'),
                             'TTS 13',
@@ -428,7 +428,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
                                address: string, city: string) {
     const icsBody = 
         'BEGIN:VCALENDAR\n' +
-        'X-WR-TIMEZONE:\n' +
+        'X-WR-TIMEZONE:Romance Standard Time\n' +
         'VERSION:2.0\n' +
         'PRODID:Calendar\n' +
         'CALSCALE:GREGORIAN\n' +
