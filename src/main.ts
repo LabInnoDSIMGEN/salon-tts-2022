@@ -116,9 +116,128 @@ WA.onInit().then(() => {
     });
 
     //trouver le chemin relatif des tilesets
+    WA.room.area.onEnter('librarySignTTS1').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS1",
+        "Ressources de TTS N°1 : L'automatisation robotisée des process (RPA) \n " +
+            "Intervenants : Rami TORKHANI \n " +
+            "(SAO) \n " +
+            "Aurélien GRANDJEAN \n " +
+            "(AOC)",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    //trouver le chemin relatif des tilesets
+    WA.room.area.onEnter('librarySignTTS2').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS2",
+            "Ressources de TTS N°2 : Conteneurisation, un des enjeux des process devsecops  \n " +
+            "Intervenants : Frédéric ROULET \n " +
+            " Yannick MULLER \n " +
+            "(société REDHAT) \n " +
+            "Cédric ROMéRO \n" +
+            "Philippe GAVOIS",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS3').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS3",
+            "Ressources de TTS N°3 : Accessibilité & Handicap  \n " +
+            "Intervenants : Marielle MORIZOT \n " +
+            "Mathieu FROIDURE \n " +
+            "(Président de la société URBILOG)\n ",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS4').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS4",
+            "Ressources de TTS N°4 : Pratique centrées utilisateurs : l'UX research  \n" +
+            "Intervenants : Roxanne SPIES \n" +
+            "(Prestataire au sein du LAB et Experte User Research) \n" +
+            " France WANG \n" +
+            "(CPO de la plateforme Tandemz)\n" +
+            "Alice TAPIA \n" +
+            "(UX/UI designer)",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS5').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS5",
+            "Ressources de TTS N°5 : Outillage Ansible, AWX et Maestro\n" +
+            "Intervenants : Cédric Romero \n" +
+            "(TMO) \n" +
+            "Emmanuel Muller \n" +
+            "(TMO)\n" +
+            "Dominique Parisot \n" +
+            "(TMO)\n" +
+            "Mathieu Goulin \n" +
+            "(TMO)\n" +
+            "Anas Haddad \n" +
+            "(FST) \n" +
+            "Jean-François Javel \n" +
+            "(DSA)",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS6.1').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS6.1",
+            "Ressources de TTS N°6.1 : Intelligence artificielle - Vulgarisation et demystification\n" +
+            "Intervenants : Isabelle DONATO \n" +
+            "(Directrice Innovation FabLab INETUM)\n" +
+            "Jean-Paul MULLER \n" +
+            "(Global Practice Manager INETUM)\n",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+
+    WA.room.area.onEnter('librarySignTTS7').subscribe(() => {
+    currentPopup = WA.ui.openPopup("librarySignPopupTTS7",
+        "Ressources de TTS N°7 : L'automatisation dans les projets applicatifs, accelerateur devsecops d'aujourdh'ui et de demain\n" +
+        "Intervenants :Rémi RAPENNE \n" +
+        "Frédéric ROULET\n" +
+        "Ludovic PIOT \n",
+        [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+});
+
+    WA.room.area.onEnter('librarySignTTS8').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS8",
+            "Ressources de TTS N°8 : L'écosystéme des applications mobile MGEN\n" +
+            "Intervenants : Inès ROUANET\n" +
+            "(Digital Factory)\n" +
+            "Agnès CHATELLE \n" +
+            "(Direction Digitale)\n",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS6.2').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS6.2",
+            "Ressources de TTS N°8 : L'écosystéme des applications mobile MGEN\n" +
+            "Intervenants : Amine BENHENNI\n" +
+            "(expert stratégie et exécution DATA & IA)\n" +
+            "Christophe GAZEAU \n" +
+            "(expert Digital de AKORDIA)\n" +
+            "Christophe GAZEAU \n" +
+            "(expert stratégie et exécution DATA & IA)\n" +
+            "Marième LOUGADI \n" +
+            "Franck GRANDMAIRE \n" +
+            "(Equipe industrialisation de QTS (Qualité Transformation Sécurité))" ,
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('librarySignTTS9').subscribe(() => {
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS9",
+            "Ressources de TTS N°9 : Les cas d'usage de la Blockchain\n" +
+            "Intervenants : Théotime PINON\n" +
+            "(Cabinet de conseil OCTO)\n",
+            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("welcomePopup", 
-        "Bienvenue au LAB Hours du LAB Inno",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+        currentPopup = WA.ui.openPopup("welcomePopup",
+            "Bienvenue au LAB Hours du LAB Inno",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+    });
+
+    WA.room.area.onEnter('libraryIndication').subscribe(() => {
+        currentPopup = WA.ui.openPopup("libraryIndicationPopup",
+            "Bienvenue dans les archives des TTS 2021",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
     });
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
@@ -128,6 +247,17 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('tts12Zone').subscribe(closePopup);
     WA.room.area.onLeave('officeZone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
+    WA.room.area.onLeave('libraryIndication').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS1').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS2').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS3').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS4').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS5').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS6.1').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS7').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS6.2').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS8').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS9').subscribe(closePopup);
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
