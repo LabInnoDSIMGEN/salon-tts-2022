@@ -520,7 +520,7 @@ WA.onInit().then(() => {
             "Bienvenue dans les archives des TTS 2021",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
     });
 
-    WA.room.area.onEnter('officeZone').subscribe(() => {
+    WA.room.area.onEnter('officeIndicationZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("officeIndicationPopup",
             "Suivez ce chemin jusqu'au bout et prenez en haut \n pour atteindre nos bureaux ",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
     });
@@ -535,7 +535,7 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('tts15Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts16Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts17.1Zone').subscribe(closePopup);
-    WA.room.area.onLeave('officeIndication').subscribe(closePopup);
+    WA.room.area.onLeave('officeIndicationZone').subscribe(closePopup);
 
 
 
