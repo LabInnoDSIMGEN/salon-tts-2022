@@ -50,7 +50,7 @@ WA.onInit().then(() => {
                     'TTS 11',
                     'Services dans le Cloud, introduction et notre utilisation à venir',
                     'Salon des TTS',
-                    'DSI MGEN',
+                    ' DSI MGEN',
                     'Metavers'
                     );
                 }},
@@ -63,7 +63,7 @@ WA.onInit().then(() => {
                         'TTS 11',
                         'Services dans le Cloud, introduction et notre utilisation à venir',
                         'Salon des TTS',
-                        'DSI MGEN',
+                        ' DSI MGEN',
                         'Metavers'
                         );
                     }},
@@ -85,7 +85,7 @@ WA.onInit().then(() => {
                     'TTS 12',
                     "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
                     'Salon des TTS',
-                    'DSI MGEN',
+                    ' DSI MGEN',
                     'Metavers'
                     );
                 }},
@@ -98,7 +98,7 @@ WA.onInit().then(() => {
                         'TTS 12',
                         "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
                         'Salon des TTS',
-                        'DSI MGEN',
+                        ' DSI MGEN',
                         'Metavers'
                         );
                     }},
@@ -108,7 +108,141 @@ WA.onInit().then(() => {
         );
     });
 
-    WA.room.area.onEnter('officeZone').subscribe(() => {
+    WA.room.area.onEnter('tts13Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts13Popup",
+            "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod",
+            [{ label: "Echangez avec \n Cyril Carrillat \n" +
+                    "Lundi 27 Mars \n " +
+                    "14h-15h",
+                className: "primary", callback: () => {
+                    createDownloadICSFile(
+                        'Europe/Paris',
+                        new Date('Mar 27, 2023 14:00'),
+                        new Date('Mar 27, 2023 15:00'),
+                        'TTS 13',
+                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                        'Salon des TTS',
+                        ' DSI MGEN',
+                        'Metavers'
+                    );
+                }},
+
+                { label: "Echangez avec \n Cyril Carrillat\n " +
+                        "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
+                        createDownloadICSFile(
+                            'Europe/Paris',
+                            new Date('Mar 29, 2023 14:00'),
+                            new Date('Mar 29, 2023 15:00'),
+                            'TTS 13',
+                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                            'Salon des TTS',
+                            ' DSI MGEN',
+                            'Metavers'
+                        );
+                    }},
+
+                { label:"Echangez avec \n Cyril Carrillat\n" +
+                        "Mercredi 29 Mars \n 14h00-15h00", className: "primary", callback: () => {
+                        createDownloadICSFile(
+                            'Europe/Paris',
+                            new Date('Mar 29, 2023 14:00'),
+                            new Date('Mar 29, 2023 15:00'),
+                            'TTS 13',
+                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                            'Salon des TTS',
+                            ' DSI MGEN',
+                            'Metavers'
+                        );
+                    }},
+
+                { label:"Echangez avec \n Cyril Carrillat\n" +
+                        "Mercredi 30 Mars \n 10h-11h", className: "primary", callback: () => {
+                        createDownloadICSFile(
+                            'Europe/Paris',
+                            new Date('Mar 30, 2023 10:00'),
+                            new Date('Mar 30, 2023 11:00'),
+                            'TTS 13',
+                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                            'Salon des TTS',
+                            ' DSI MGEN',
+                            'Metavers'
+                        );
+                    }},
+
+                { label:"Echangez avec \n Cyril Carrillat\n" +
+                        "Mercredi 31 Mars \n 10h-11h", className: "primary", callback: () => {
+                        createDownloadICSFile(
+                            'Europe/Paris',
+                            new Date('Mar 31, 2023 10:00'),
+                            new Date('Mar 31, 2023 11:00'),
+                            'TTS 13',
+                            "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                            'Salon des TTS',
+                            ' DSI MGEN',
+                            'Metavers'
+                        );
+                    }},
+
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}
+            ]
+        );
+    });
+
+    WA.room.area.onEnter('tts14Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts14Popup",
+            "TTS 14 : Web analytics : \n découvrez son fonctionnement et ses enjeux  \n Présenté par \n Quentin Montcharmont",
+            [
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
+
+    WA.room.area.onEnter('tts15Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts15Popup",
+            "TTS 15 : \n L'automatisation intelligente au service des collaborateurs"
+            + "\n Présenté par \n Ahmed FATHALLAH"
+            + "\n Andrada COVACI"
+            + "\n Sébastien SAURON"
+            + "\n Jean-Baptiste RAINSART",
+            [
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
+
+    WA.room.area.onEnter('tts16Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts16Popup",
+            "TTS 16 : \n La Data Science au service des métiers et au cœur de la transformation MGEN"
+            + "\n Présenté par \n Carlos GONCALVES"
+            + "\n Hakim RANDRIANARIVO"
+            + "\n Céline LECLEIRE"
+            + "\n Romain BOURGON"
+            + "\n Steven YVEN",
+            [
+                { label: "Disponibilités à venir", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
+
+    WA.room.area.onEnter('tts17.1Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts17.1Popup",
+            "TTS 17.1 : \n Les tendances en e-santé : Les thérapies Digitales (DTx)"
+            + "\n Présenté par \n Alizée SEGARD"
+            + "\n Alix D'ARCHIMBAUD"
+            + "\n Virginie FEMERY",
+            [
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+        );
+    });
+
+
+                WA.room.area.onEnter('officeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "officePopup", 
             "Venez ici pour échanger avec l'équipe du Lab Inno",  
@@ -245,6 +379,14 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('tts10Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts11Zone').subscribe(closePopup);
     WA.room.area.onLeave('tts12Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts13Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts14Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts15Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts16Zone').subscribe(closePopup);
+    WA.room.area.onLeave('tts17.1Zone').subscribe(closePopup);
+
+
+
     WA.room.area.onLeave('officeZone').subscribe(closePopup);
     WA.room.area.onLeave('welcomeZone').subscribe(closePopup);
     WA.room.area.onLeave('libraryIndication').subscribe(closePopup);
