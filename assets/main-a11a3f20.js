@@ -39,11 +39,13 @@ Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : `
  Cyril Carrillat 
  Marie Cordenod 
 Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :`,[{label:`Cyril Carrillat 
- Lundi 27 Mars 
-15h-16h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 27, 2023 15:00"),new Date("Mar 27, 2023 16:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril Carrillat
+Lundi 27 Mars 
+15h-16h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 27, 2023 15:00"),new Date("Mar 27, 2023 16:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril Carrillat 
 Mercredi 29 Mars 
-14h-15h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 29, 2023 14:00"),new Date("Mar 29, 2023 15:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril CarrillatJeudi 30 Mars 
-10h-11h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 30, 2023 10:00"),new Date("Mar 30, 2023 11:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril CarrillatVendredi 31 Mars 
+14h-15h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 29, 2023 14:00"),new Date("Mar 29, 2023 15:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril Carrillat 
+Jeudi 30 Mars 
+10h-11h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 30, 2023 10:00"),new Date("Mar 30, 2023 11:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:`Cyril Carrillat 
+Vendredi 31 Mars 
 11h-12h`,className:"primary",callback:()=>{T("Romance Standard Time",new Date("Mar 31, 2023 11:00"),new Date("Mar 31, 2023 12:00"),"TTS 13","Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?","Salon des TTS","DSI MGEN","Metavers")}},{label:"Fermer",className:"primary",callback:()=>{u()}}])}),WA.room.area.onEnter("tts14Zone").subscribe(()=>{m=WA.ui.openPopup("tts14Popup",`TTS 14 : 
  Présenté par 
  Quentin Montcharmont 
