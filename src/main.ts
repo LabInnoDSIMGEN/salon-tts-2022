@@ -233,20 +233,6 @@ WA.onInit().then(() => {
             + "\n Steven YVEN \n"
             + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible : \n",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
-        );
-    });
-
-    WA.room.area.onEnter('tts17.1Zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup(
-            "tts17.1Popup",
-            "TTS 17.1 :\n"
-            + " Présenté par \n Alizée SEGARD"
-            + "\n Alix D'ARCHIMBAUD"
-            + "\n Virginie FEMERY \n"
-            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
-            [
                 {
                     label: "Carlos GONCALVES\nMercredi 29 Mars \n14h-15h",
                     className: "primary",
@@ -360,6 +346,20 @@ WA.onInit().then(() => {
                     }
                 },
             ]
+        );
+    });
+
+    WA.room.area.onEnter('tts17.1Zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup(
+            "tts17.1Popup",
+            "TTS 17.1 :\n"
+            + " Présenté par \n Alizée SEGARD"
+            + "\n Alix D'ARCHIMBAUD"
+            + "\n Virginie FEMERY \n"
+            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
+            [
+                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
 
