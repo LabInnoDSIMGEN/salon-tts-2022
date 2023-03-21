@@ -67,12 +67,7 @@ Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :`,[
  Romain BOURGON
  Steven YVEN 
 Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible : 
-`,[{label:"Pas de disponibilités",className:"primary",callback:()=>{u()}},{label:"Fermer",className:"primary",callback:()=>{u()}}])}),WA.room.area.onEnter("tts17.1Zone").subscribe(()=>{m=WA.ui.openPopup("tts17.1Popup",`TTS 17.1 :
- Présenté par 
- Alizée SEGARD
- Alix D'ARCHIMBAUD
- Virginie FEMERY 
-Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :`,[{label:`Carlos GONCALVES
+`,[{label:`Carlos GONCALVES
 Mercredi 29 Mars 
 14h-15h`,className:"primary",callback:()=>{S("Romance Standard Time",new Date("Mar 29, 2023 14:00"),new Date("Mar 29, 2023 15:00"),"TTS 17.1","La Data Science au service des métiers et au cœur de la transformation MGEN","Salon des TTS","DSI MGEN","Metavers")}},{label:`Carlos GONCALVES
 Mercredi 31 Mars 
@@ -86,7 +81,12 @@ Lundi 31 Mars
 Lundi 29 Mars 
 14h-15h`,className:"primary",callback:()=>{S("Romance Standard Time",new Date("Mar 29, 2023 14:00"),new Date("Mar 29, 2023 15:00"),"TTS 17.1","La Data Science au service des métiers et au cœur de la transformation MGEN","Salon des TTS","DSI MGEN","Metavers")}},{label:`Steven YVEN
 Lundi 31 Mars 
-11h-12h`,className:"primary",callback:()=>{S("Romance Standard Time",new Date("Mar 31, 2023 11:00"),new Date("Mar 31, 2023 12:00"),"TTS 17.1","La Data Science au service des métiers et au cœur de la transformation MGEN","Salon des TTS","DSI MGEN","Metavers")}}])}),WA.room.area.onEnter("officeZone").subscribe(()=>{m=WA.ui.openPopup("officePopup","Venez ici pour échanger avec l'équipe du Lab Inno",[{label:"Fermer",className:"primary",callback:()=>{u()}}])}),WA.room.area.onEnter("librarySignTTS1").subscribe(()=>{m=WA.ui.openPopup("librarySignPopupTTS1",`Ressources de TTS N°1 : L'automatisation robotisée des process (RPA) 
+11h-12h`,className:"primary",callback:()=>{S("Romance Standard Time",new Date("Mar 31, 2023 11:00"),new Date("Mar 31, 2023 12:00"),"TTS 17.1","La Data Science au service des métiers et au cœur de la transformation MGEN","Salon des TTS","DSI MGEN","Metavers")}}])}),WA.room.area.onEnter("tts17.1Zone").subscribe(()=>{m=WA.ui.openPopup("tts17.1Popup",`TTS 17.1 :
+ Présenté par 
+ Alizée SEGARD
+ Alix D'ARCHIMBAUD
+ Virginie FEMERY 
+Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :`,[{label:"Pas de disponibilités",className:"primary",callback:()=>{u()}},{label:"Fermer",className:"primary",callback:()=>{u()}}])}),WA.room.area.onEnter("officeZone").subscribe(()=>{m=WA.ui.openPopup("officePopup","Venez ici pour échanger avec l'équipe du Lab Inno",[{label:"Fermer",className:"primary",callback:()=>{u()}}])}),WA.room.area.onEnter("librarySignTTS1").subscribe(()=>{m=WA.ui.openPopup("librarySignPopupTTS1",`Ressources de TTS N°1 : L'automatisation robotisée des process (RPA) 
  Intervenants : Rami TORKHANI 
  (SAO) 
  Aurélien GRANDJEAN 
