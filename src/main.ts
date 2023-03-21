@@ -33,7 +33,19 @@ WA.onInit().then(() => {
             "tts10Popup",
             "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
             [
-            { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+            { label: "Aklesso TCHAKPELE \n Jeudi 30 Mars \n 14h-16h", className: "primary", callback: () => {
+                createDownloadICSFile(
+                    'Romance Standard Time',
+                    new Date('Mar 30, 2023 14:00'),
+                    new Date('Mar 30, 2023 16:00'),
+                    'TTS 10',
+                    'Feedback API Program 2021 – Horizon Plan 2022 – API Gouvernance',
+                    'Salon des TTS',
+                    ' DSI MGEN',
+                    'Metavers'
+                    );
+                }
+            },
             { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
