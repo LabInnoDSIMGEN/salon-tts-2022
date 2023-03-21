@@ -114,13 +114,13 @@ WA.onInit().then(() => {
         "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n" +
         "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :",
         [{
-            label: "Cyril Carrillat \n Lundi 27 Mars \n14h-15h",
+            label: "Cyril Carrillat \n Lundi 27 Mars \n15h-16h",
             className: "primary",
             callback: () => {
                 createDownloadICSFile(
                     'Romance Standard Time',
-                    new Date('Mar 27, 2023 14:00'),
                     new Date('Mar 27, 2023 15:00'),
+                    new Date('Mar 27, 2023 16:00'),
                     'TTS 13',
                     "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
                     'Salon des TTS',
@@ -147,23 +147,7 @@ WA.onInit().then(() => {
                 }
             },
             {
-                label: "Cyril Carrillat\nMercredi 29 Mars \n14h-15h",
-                className: "primary",
-                callback: () => {
-                    createDownloadICSFile(
-                        'Romance Standard Time',
-                        new Date('Mar 29, 2023 14:00'),
-                        new Date('Mar 29, 2023 15:00'),
-                        'TTS 13',
-                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                        'Salon des TTS',
-                        'DSI MGEN',
-                        'Metavers'
-                    );
-                }
-            },
-            {
-                label: "Cyril Carrillat\nMercredi 30 Mars \n10h-11h",
+                label: "Cyril Carrillat\Jeudi 30 Mars \n10h-11h",
                 className: "primary",
                 callback: () => {
                     createDownloadICSFile(
@@ -178,20 +162,22 @@ WA.onInit().then(() => {
                     );
                 }
             },
-
-            { label:"Cyril Carrillat\n" +
-                    "Mercredi 31 Mars \n 10h-11h", className: "primary", callback: () => {
+            {
+                label: "Cyril Carrillat\Vendredi 31 Mars \n11h-12h",
+                className: "primary",
+                callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
-                        new Date('Mar 31, 2023 10:00'),
                         new Date('Mar 31, 2023 11:00'),
+                        new Date('Mar 31, 2023 12:00'),
                         'TTS 13',
                         "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
                         'Salon des TTS',
-                        ' DSI MGEN',
+                        'DSI MGEN',
                         'Metavers'
                     );
-                }},
+                }
+            },
             { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
