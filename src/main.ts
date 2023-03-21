@@ -306,7 +306,7 @@ WA.onInit().then(() => {
             "tts17.1Popup",
             "TTS 17.1 :\n"
             + " Présenté par \n Alizée SEGARD"
-            + "\n Alix D'ARCHIMBAUD"
+            + "\n Mansour YOUM"
             + "\n Virginie FEMERY \n"
             + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
