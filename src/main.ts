@@ -440,9 +440,9 @@ WA.onInit().then(() => {
             "Bienvenue au Salon des TTS du LAB Inno \n" +
             "\n" +
             "\n" +
-            "La zone rouge permet d'acceder au Replay d'un TTS \n" +
-            "La zone jaune permet d'acceder a l'article d'un TTS \n" +
-            "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
+            "Une zone rouge permet d'acceder au Replay d'un TTS \n" +
+            "Une zone jaune permet d'acceder à l'article d'un TTS \n" +
+            "Une zone verte permet d'acceder au Sharepoint contenant la documentation du TTS " +
             "\n" +
             "\n" +
             "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
@@ -455,9 +455,9 @@ WA.onInit().then(() => {
             "Bienvenue au Salon des TTS du LAB Inno \n" +
             "\n" +
             "\n" +
-            "La zone rouge permet d'acceder au Replay d'un TTS \n" +
-            "La zone jaune permet d'acceder a l'article d'un TTS \n" +
-            "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
+            "Une zone rouge permet d'acceder au Replay d'un TTS \n" +
+            "Une zone jaune permet d'acceder à l'article d'un TTS \n" +
+            "Une zone verte permet d'acceder au Sharepoint contenant la documentation du TTS " +
             "\n" +
             "\n" +
             "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
