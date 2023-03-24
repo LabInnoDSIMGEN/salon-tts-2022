@@ -1462,14 +1462,14 @@
                 }, 
                 {
                  "class":"",
-                 "height":179.759107444346,
+                 "height":180,
                  "id":18,
                  "name":"welcomePopup2",
                  "rotation":0,
                  "visible":true,
-                 "width":237.06505978012,
+                 "width":300,
                  "x":1252.14285085333,
-                 "y":1036.23254473073
+                 "y":1036
                 }, 
                 {
                  "class":"area",
@@ -4822,14 +4822,14 @@
                 }, 
                 {
                  "class":"",
-                 "height":179.759,
+                 "height":180,
                  "id":182,
                  "name":"welcomePopup",
                  "rotation":0,
                  "visible":true,
-                 "width":293.279,
+                 "width":300,
                  "x":1871.90719243453,
-                 "y":1022.7521126535
+                 "y":1036
                 }, 
                 {
                  "class":"area",
