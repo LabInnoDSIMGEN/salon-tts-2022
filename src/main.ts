@@ -437,10 +437,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("welcomePopup",
-            "Bienvenue au LAB Hours du LAB Inno \n" +
+            "Bienvenue au Salon des TTS du LAB Inno \n" +
             "\n" +
             "\n" +
-            "La zone rouge permet d'acceder aux Replays d'un TTS \n" +
+            "La zone rouge permet d'acceder au Replay d'un TTS \n" +
             "La zone jaune permet d'acceder a l'article d'un TTS \n" +
             "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
             "\n" +
@@ -452,10 +452,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('welcomeZone2').subscribe(() => {
         currentPopup = WA.ui.openPopup("welcomePopup2",
-            "Bienvenue au LAB Hours du LAB Inno \n" +
+            "Bienvenue au Salon des TTS du LAB Inno \n" +
             "\n" +
             "\n" +
-            "La zone rouge permet d'acceder aux Replays d'un TTS \n" +
+            "La zone rouge permet d'acceder au Replay d'un TTS \n" +
             "La zone jaune permet d'acceder a l'article d'un TTS \n" +
             "La zone verte permet d'acceder au Sharepoint contenant le document du TTS " +
             "\n" +
