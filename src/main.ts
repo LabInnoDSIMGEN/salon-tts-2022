@@ -239,7 +239,7 @@ WA.onInit().then(() => {
                             'Romance Standard Time',
                             new Date('Mar 31, 2023 14:00'),
                             new Date('Mar 31, 2023 15:00'),
-                            'TTS 17.1',
+                            'TTS 16',
                             "La Data Science au service des métiers et au cœur de la transformation MGEN",
                             'Salon des TTS',
                             'DSI MGEN',
@@ -255,7 +255,7 @@ WA.onInit().then(() => {
                             'Romance Standard Time',
                             new Date('Mar 29, 2023 14:00'),
                             new Date('Mar 29, 2023 15:00'),
-                            'TTS 17.1',
+                            'TTS 16',
                             "La Data Science au service des métiers et au cœur de la transformation MGEN",
                             'Salon des TTS',
                             'DSI MGEN',
@@ -271,7 +271,7 @@ WA.onInit().then(() => {
                             'Romance Standard Time',
                             new Date('Mar 30, 2023 14:00'),
                             new Date('Mar 30, 2023 15:00'),
-                            'TTS 17.1',
+                            'TTS 16',
                             "La Data Science au service des métiers et au cœur de la transformation MGEN",
                             'Salon des TTS',
                             'DSI MGEN',
@@ -287,7 +287,7 @@ WA.onInit().then(() => {
                             'Romance Standard Time',
                             new Date('Mar 31, 2023 10:30'),
                             new Date('Mar 31, 2023 12:00'),
-                            'TTS 17.1',
+                            'TTS 16',
                             "La Data Science au service des métiers et au cœur de la transformation MGEN",
                             'Salon des TTS',
                             'DSI MGEN',
@@ -308,7 +308,38 @@ WA.onInit().then(() => {
             + "\n Virginie FEMERY \n"
             + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
+                {
+                    label: "Mardi 28 Mars \n11h-12h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 28, 2023 11:00'),
+                            new Date('Mar 28, 2023 12:00'),
+                            'TTS 17.1',
+                            "Les tendances en e-santé : Les thérapies Digitales (DTx)",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                {
+                    label: "Vendredi 31 Mars \n11h-12h",
+                    className: "primary",
+                    callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 31, 2023 11:00'),
+                            new Date('Mar 31, 2023 12:00'),
+                            'TTS 17.1',
+                            "Les tendances en e-santé : Les thérapies Digitales (DTx)",
+                            'Salon des TTS',
+                            'DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
                 { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
         );
     });
