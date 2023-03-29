@@ -530,8 +530,8 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('librarySignTTS4').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS5').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS6.1').subscribe(closePopup);
-    WA.room.area.onLeave('librarySignTTS7').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS6.2').subscribe(closePopup);
+    WA.room.area.onLeave('librarySignTTS7').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS8').subscribe(closePopup);
     WA.room.area.onLeave('librarySignTTS9').subscribe(closePopup);
 
