@@ -445,7 +445,7 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('librarySignTTS6.2').subscribe(() => {
         currentPopup = WA.ui.openPopup("librarySignPopupTTS6.2",
-            "Ressources de TTS N°6.2 : L'écosystéme des applications mobile MGEN\n" +
+            "Ressources de TTS N°6.2 : Cadrer et Piloter les cas d'usage dans les mutuelles et les assurances \n" +
             "Intervenants : Amine BENHENNI\n" +
             "(expert stratégie et exécution DATA & IA)\n" +
             "Christophe GAZEAU \n" +
