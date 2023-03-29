@@ -3865,7 +3865,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/mgen.sharepoint.com\/:b:\/r\/sites\/t-o-labinnovationdsi\/Documents%20partages\/Moments%20du%20LAB%20Innovation\/Tech%20Time%20to%20Share%20(TTS)\/TTS%235_PPT_Maestro_AWX_Ansible_20210623.pdf?csf=1&web=1&e=Wh2euF"
+                         "value":"https:\/\/mgen.sharepoint.com\/sites\/t-o-labinnovationdsi\/Documents%20partages\/Forms\/AllItems.aspx?id=%2Fsites%2Ft%2Do%2Dlabinnovationdsi%2FDocuments%20partages%2FMoments%20du%20LAB%20Innovation%2FTech%20Time%20to%20Share%20%28TTS%29%2F2021%2FTTS%235%5FPPT%5FMaestro%5FAWX%5FAnsible%5F20210623%2Epdf&viewid=a90c4ef3%2D7f6b%2D4587%2D8648%2D36d231fdc20c&parent=%2Fsites%2Ft%2Do%2Dlabinnovationdsi%2FDocuments%20partages%2FMoments%20du%20LAB%20Innovation%2FTech%20Time%20to%20Share%20%28TTS%29%2F2021"
                         }, 
                         {
                          "name":"openWebsitePolicy",
@@ -3997,7 +3997,7 @@
                  "rotation":0,
                  "visible":true,
                  "width":117.46057127556,
-                 "x":293.262264108209,
+                 "x":291.640204091988,
                  "y":1567.57833566177
                 }, 
                 {
@@ -4275,7 +4275,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/cir.mgen.tv\/export\/inno___tts_a89h"
+                         "value":"https:\/\/cir.mgen.tv\/export\/tts9blockc_u7k0"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -4312,7 +4312,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/fr.wikipedia.org\/wiki\/Wikip%C3%A9dia:Accueil_principal"
+                         "value":"https:\/\/mgen.sharepoint.com\/:p:\/r\/sites\/t-o-labinnovationdsi\/Documents%20partages\/Moments%20du%20LAB%20Innovation\/Tech%20Time%20to%20Share%20(TTS)\/TTS%238%20-%20L%27%C3%A9cosyst%C3%A8me%20des%20applications%20mobile%20MGEN.ppt?d=wcb3a0b458373478db3505e4f688d3475&csf=1&web=1&e=HYW1eF"
                         }, 
                         {
                          "name":"openWebsitePolicy",
@@ -4354,7 +4354,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-7-lautomatisation-dans-les-projets-applicatifs-accelerateur-devsecops-daujourdhui-et-de-demain"
+                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-8-lecosysteme-des-applications-mobiles-mgen"
                         }, 
                         {
                          "name":"openWebsitePolicy",
@@ -4424,7 +4424,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/cir.mgen.tv\/export\/inno___tts_a89h"
+                         "value":"https:\/\/cir.mgen.tv\/export\/tts_6_2__i_vqp7"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -4503,7 +4503,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-7-lautomatisation-dans-les-projets-applicatifs-accelerateur-devsecops-daujourdhui-et-de-demain"
+                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-62-cadrer-et-piloter-les-cas-dusage-dans-les-mutuelles-et-les-assurances"
                         }, 
                         {
                          "name":"openWebsitePolicy",
@@ -4652,7 +4652,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-7-lautomatisation-dans-les-projets-applicatifs-accelerateur-devsecops-daujourdhui-et-de-demain"
+                         "value":"https:\/\/ma.mgen.fr\/accueil\/tts-n-9-les-cas-dusage-de-la-blockchain"
                         }, 
                         {
                          "name":"openWebsitePolicy",
@@ -5500,8 +5500,8 @@
                  "rotation":0,
                  "visible":true,
                  "width":377.944,
-                 "x":38.2120873634945,
-                 "y":1404.89219734789
+                 "x":37.4010573553842,
+                 "y":1410.56940740466
                 }, 
                 {
                  "class":"",
@@ -5607,7 +5607,7 @@
                 }, 
                 {
                  "class":"",
-                 "height":125.083,
+                 "height":121.027849959448,
                  "id":238,
                  "name":"silentZone",
                  "properties":[
@@ -5619,8 +5619,8 @@
                  "rotation":0,
                  "visible":true,
                  "width":377.944,
-                 "x":456.220587561851,
-                 "y":1406.36312792277
+                 "x":452.1654375213,
+                 "y":1412.85136798765
                 }, 
                 {
                  "class":"",
