@@ -21,9 +21,9 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts6.3Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts6.3Popup",
-            "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI",
+            "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI \n ",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                /* { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } }, */
                 { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -31,9 +31,9 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts10Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts10Popup",
-            "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
+            "TTS 10 \n Présenté par \n Aklesso TCHAKPELE \n",
             [
-                {
+                /* {
                     label: "Aklesso TCHAKPELE \n Jeudi 30 Mars \n 14h-16h", className: "primary", callback: () => {
                         createDownloadICSFile(
                             'Romance Standard Time',
@@ -46,7 +46,7 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
+                }, */
                 { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -92,9 +92,8 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts12Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts12Popup",
-            "TTS 12 \n Présenté par \n Roxanne SPIES \n" +
-            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : ",
-            [{
+            "TTS 12 \n Présenté par \n Roxanne SPIES \n",
+            [/* {
                 label: "Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
@@ -107,9 +106,9 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
+            }, */
 
-            {
+            /* {
                 label: "Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
@@ -122,7 +121,7 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
+            }, */
 
             { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
@@ -131,9 +130,8 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts13Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts13Popup",
-            "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n" +
-            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :",
-            [{
+            "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n",
+            [/* {
                 label: "Cyril Carrillat \nLundi 27 Mars \n15h-16h",
                 className: "primary",
                 callback: () => {
@@ -148,9 +146,9 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
+            }, */
 
-            {
+            /* {
                 label: "Cyril Carrillat \nMercredi 29 Mars \n14h-15h",
                 className: "primary",
                 callback: () => {
@@ -165,8 +163,8 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
-            {
+            }, */
+            /* {
                 label: "Cyril Carrillat \nJeudi 30 Mars \n10h-11h",
                 className: "primary",
                 callback: () => {
@@ -181,8 +179,8 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
-            {
+            }, */
+            /* {
                 label: "Cyril Carrillat \nVendredi 31 Mars \n11h-12h",
                 className: "primary",
                 callback: () => {
@@ -197,7 +195,7 @@ WA.onInit().then(() => {
                         'Metavers'
                     );
                 }
-            },
+            }, */
             { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -205,10 +203,9 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('tts14Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts14Popup",
-            "TTS 14 : \n Présenté par \n Quentin Montcharmont \n" +
-            "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
+            "TTS 14 : \n Présenté par \n Quentin Montcharmont \n",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                /* { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } }, */
                 { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -220,10 +217,9 @@ WA.onInit().then(() => {
             + "\n Présenté par \n Ahmed FATHALLAH"
             + "\n Andrada COVACI"
             + "\n Sébastien SAURON"
-            + "\n Jean-Baptiste RAINSART \n" +
-            "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
+            + "\n Jean-Baptiste RAINSART \n",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                /* { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } }, */
                 { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -236,10 +232,9 @@ WA.onInit().then(() => {
             + "\n Hakim RANDRIANARIVO"
             + "\n Céline LECLEIRE"
             + "\n Romain BOURGON"
-            + "\n Steven YVEN \n"
-            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible : \n",
+            + "\n Steven YVEN \n",
             [
-                {
+                /* {
                     label: "Lundi 27 Mars \n14h-15h",
                     className: "primary",
                     callback: () => {
@@ -254,8 +249,8 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
-                {
+                }, */
+                /* {
                     label: "Mercredi 29 Mars \n14h-15h",
                     className: "primary",
                     callback: () => {
@@ -270,8 +265,8 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
-                {
+                }, */
+                /* {
                     label: "Jeudi 30 Mars \n14h-15h",
                     className: "primary",
                     callback: () => {
@@ -286,8 +281,8 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
-                {
+                }, */
+                /* {
                     label: "Vendredi 31 Mars \n10h30-12h",
                     className: "primary",
                     callback: () => {
@@ -302,7 +297,8 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                }
+                } */
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }
             ]
         );
     });
@@ -313,10 +309,9 @@ WA.onInit().then(() => {
             "TTS 17.1 :\n"
             + " Présenté par \n Alizée SEGARD"
             + "\n Mansour YOUM"
-            + "\n Virginie FEMERY \n"
-            + "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
+            + "\n Virginie FEMERY \n",
             [
-                {
+                /* {
                     label: "Mardi 28 Mars \n11h-12h",
                     className: "primary",
                     callback: () => {
@@ -331,8 +326,8 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
-                {
+                }, */
+                /* {
                     label: "Vendredi 31 Mars \n11h-12h",
                     className: "primary",
                     callback: () => {
@@ -347,7 +342,7 @@ WA.onInit().then(() => {
                             'Metavers'
                         );
                     }
-                },
+                }, */
                 { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
@@ -355,7 +350,7 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('officeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "officePopup",
-            "Venez ici pour échanger avec l'équipe du Lab Inno",
+            "Venez ici pour échanger avec l'équipe du Lab Inno \n",
             [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
@@ -506,7 +501,7 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('libraryIndication').subscribe(() => {
         currentPopup = WA.ui.openPopup("libraryIndicationPopup",
-            "Bienvenue dans les archives des TTS 2021", [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
+            "Bienvenue dans les archives des TTS 2021 \n", [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('officeIndicationZone').subscribe(() => {
