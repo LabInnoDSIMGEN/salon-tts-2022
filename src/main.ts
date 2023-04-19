@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-import * as FileSaver from 'file-saver';
+/* import * as FileSaver from 'file-saver'; */
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -545,11 +545,11 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function download(fileBody: string) {
+/* function download(fileBody: string) {
     WA.nav.openTab('data:text/calendar;charset=utf-8,' + encodeURIComponent(fileBody));
-}
+} */
 
-function convertToICSDate(dateTime: Date): string {
+/* function convertToICSDate(dateTime: Date): string {
     const year = dateTime.getFullYear().toString();
     const month = (dateTime.getMonth() + 1) < 10 ? "0" + (dateTime.getMonth() + 1).toString() : (dateTime.getMonth() + 1).toString();
     const day = dateTime.getDate() < 10 ? "0" + dateTime.getDate().toString() : dateTime.getDate().toString();
@@ -557,7 +557,7 @@ function convertToICSDate(dateTime: Date): string {
     const minutes = dateTime.getMinutes() < 10 ? "0" + dateTime.getMinutes().toString() : dateTime.getMinutes().toString();
 
     return year + month + day + "T" + hours + minutes + "00";
-}
+} */
 
 /* function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
     title: string, description: string, venueName: string,
