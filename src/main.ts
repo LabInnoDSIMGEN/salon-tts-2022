@@ -559,7 +559,7 @@ function convertToICSDate(dateTime: Date): string {
     return year + month + day + "T" + hours + minutes + "00";
 }
 
-function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
+/* function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
     title: string, description: string, venueName: string,
     address: string, city: string) {
     const icsBody =
@@ -589,7 +589,7 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
     download(icsBody);
     const blob = new Blob([icsBody], { type: 'text/calendar;charset=utf-8' });
     FileSaver.saveAs(blob, title + '.ics');
-}
+} */
 
 function closePopup() {
     if (currentPopup !== undefined) {
