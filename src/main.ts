@@ -23,8 +23,8 @@ WA.onInit().then(() => {
             "tts6.3Popup",
             "TTS 6.3 \n Présenté par \n Stéphane Maréchal \n CGI",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
@@ -33,42 +33,45 @@ WA.onInit().then(() => {
             "tts10Popup",
             "TTS 10 \n Présenté par \n Aklesso TCHAKPELE",
             [
-            { label: "Aklesso TCHAKPELE \n Jeudi 30 Mars \n 14h-16h", className: "primary", callback: () => {
-                createDownloadICSFile(
-                    'Romance Standard Time',
-                    new Date('Mar 30, 2023 14:00'),
-                    new Date('Mar 30, 2023 16:00'),
-                    'TTS 10',
-                    'Feedback API Program 2021 – Horizon Plan 2022 – API Gouvernance',
-                    'Salon des TTS',
-                    ' DSI MGEN',
-                    'Metavers'
-                    );
-                }
-            },
-            { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                {
+                    label: "Aklesso TCHAKPELE \n Jeudi 30 Mars \n 14h-16h", className: "primary", callback: () => {
+                        createDownloadICSFile(
+                            'Romance Standard Time',
+                            new Date('Mar 30, 2023 14:00'),
+                            new Date('Mar 30, 2023 16:00'),
+                            'TTS 10',
+                            'Feedback API Program 2021 – Horizon Plan 2022 – API Gouvernance',
+                            'Salon des TTS',
+                            ' DSI MGEN',
+                            'Metavers'
+                        );
+                    }
+                },
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
     WA.room.area.onEnter('tts11Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
             "tts11Popup",
-            "TTS 11 \n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN\n" +
-            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : ",
-            [{ label: "Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => {
-                createDownloadICSFile(
-                    'Romance Standard Time',
-                    new Date('Mar 27, 2023 14:00'),
-                    new Date('Mar 27, 2023 15:00'),
-                    'TTS 11',
-                    'Services dans le Cloud, introduction et notre utilisation à venir',
-                    'Salon des TTS',
-                    ' DSI MGEN',
-                    'Metavers'
+            "TTS 11 \n Présenté par \n François GERGAUD \n Andrew MUMFORD \n Pascal LAMBERT \n Cédric ROMERO \n Mathieu GOULIN\n",
+            [/* {
+                label: "Mathieu GOULIN \n Lundi 27 Mars \n 14h-15h", className: "primary", callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 27, 2023 14:00'),
+                        new Date('Mar 27, 2023 15:00'),
+                        'TTS 11',
+                        'Services dans le Cloud, introduction et notre utilisation à venir',
+                        'Salon des TTS',
+                        ' DSI MGEN',
+                        'Metavers'
                     );
-                }},
-            
-                { label: "Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => {
+                }
+            }, */
+
+/*             {
+                label: "Mathieu GOULIN \n Jeudi 30 Mars \n 10h-11h", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
                         new Date('Mar 30, 2023 10:00'),
@@ -78,10 +81,11 @@ WA.onInit().then(() => {
                         'Salon des TTS',
                         ' DSI MGEN',
                         'Metavers'
-                        );
-                    }},
-                    
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                    );
+                }
+            }, */
+
+            { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
@@ -90,20 +94,23 @@ WA.onInit().then(() => {
             "tts12Popup",
             "TTS 12 \n Présenté par \n Roxanne SPIES \n" +
             "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible : ",
-            [{ label: "Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => {
-                createDownloadICSFile(
-                    'Romance Standard Time',
-                    new Date('Mar 29, 2023 10:00'),
-                    new Date('Mar 29, 2023 11:00'),
-                    'TTS 12',
-                    "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
-                    'Salon des TTS',
-                    ' DSI MGEN',
-                    'Metavers'
+            [{
+                label: "Roxanne SPIES \n Mercredi 29 Mars \n 10h-11h", className: "primary", callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 29, 2023 10:00'),
+                        new Date('Mar 29, 2023 11:00'),
+                        'TTS 12',
+                        "Design System et DesignOps, quand le Design s'opérationnalise et s'adpte au mode Agile",
+                        'Salon des TTS',
+                        ' DSI MGEN',
+                        'Metavers'
                     );
-                }},
+                }
+            },
 
-                { label: "Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => {
+            {
+                label: "Roxanne SPIES \n Jeudi 30 Mars \n 16h30-17h30", className: "primary", callback: () => {
                     createDownloadICSFile(
                         'Romance Standard Time',
                         new Date('Mar 30, 2023 16:30'),
@@ -113,34 +120,35 @@ WA.onInit().then(() => {
                         'Salon des TTS',
                         ' DSI MGEN',
                         'Metavers'
-                        );
-                    }},
-                    
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                    );
+                }
+            },
+
+            { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
     WA.room.area.onEnter('tts13Zone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
-        "tts13Popup",
-        "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n" +
-        "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :",
-        [{
-            label: "Cyril Carrillat \nLundi 27 Mars \n15h-16h",
-            className: "primary",
-            callback: () => {
-                createDownloadICSFile(
-                    'Romance Standard Time',
-                    new Date('Mar 27, 2023 15:00'),
-                    new Date('Mar 27, 2023 16:00'),
-                    'TTS 13',
-                    "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
-                    'Salon des TTS',
-                    'DSI MGEN',
-                    'Metavers'
-                );
-            }
-        },
+            "tts13Popup",
+            "TTS 13 \n Présenté par \n Cyril Carrillat \n Marie Cordenod \n" +
+            "Sélectionnez un créneau pour un rendez-vous avec l'intérvenant disponible :",
+            [{
+                label: "Cyril Carrillat \nLundi 27 Mars \n15h-16h",
+                className: "primary",
+                callback: () => {
+                    createDownloadICSFile(
+                        'Romance Standard Time',
+                        new Date('Mar 27, 2023 15:00'),
+                        new Date('Mar 27, 2023 16:00'),
+                        'TTS 13',
+                        "Réalité virtuelle / réalité Augmentéée dans le monde professionnel, rêve ou... réalité ?",
+                        'Salon des TTS',
+                        'DSI MGEN',
+                        'Metavers'
+                    );
+                }
+            },
 
             {
                 label: "Cyril Carrillat \nMercredi 29 Mars \n14h-15h",
@@ -190,7 +198,7 @@ WA.onInit().then(() => {
                     );
                 }
             },
-            { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+            { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
@@ -200,8 +208,8 @@ WA.onInit().then(() => {
             "TTS 14 : \n Présenté par \n Quentin Montcharmont \n" +
             "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
@@ -215,8 +223,8 @@ WA.onInit().then(() => {
             + "\n Jean-Baptiste RAINSART \n" +
             "Sélectionnez un créneau pour un rendez-vous avec l'intervenant disponible :",
             [
-                { label: "Pas de disponibilités", className: "primary", callback: () => {closePopup()}},
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                { label: "Pas de disponibilités", className: "primary", callback: () => { closePopup() } },
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
@@ -340,26 +348,26 @@ WA.onInit().then(() => {
                         );
                     }
                 },
-                { label: "Fermer", className: "primary", callback: () => {closePopup()}}]
+                { label: "Fermer", className: "primary", callback: () => { closePopup() } }]
         );
     });
 
-                WA.room.area.onEnter('officeZone').subscribe(() => {
+    WA.room.area.onEnter('officeZone').subscribe(() => {
         currentPopup = WA.ui.openPopup(
-            "officePopup", 
-            "Venez ici pour échanger avec l'équipe du Lab Inno",  
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            "officePopup",
+            "Venez ici pour échanger avec l'équipe du Lab Inno",
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     //trouver le chemin relatif des tilesets
     WA.room.area.onEnter('librarySignTTS1').subscribe(() => {
         currentPopup = WA.ui.openPopup("librarySignPopupTTS1",
-        "Ressources de TTS N°1 : L'automatisation robotisée des process (RPA) \n " +
+            "Ressources de TTS N°1 : L'automatisation robotisée des process (RPA) \n " +
             "Intervenants : Rami TORKHANI \n " +
             "(SAO) \n " +
             "Aurélien GRANDJEAN \n " +
             "(AOC)",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     //trouver le chemin relatif des tilesets
@@ -371,7 +379,7 @@ WA.onInit().then(() => {
             "(société REDHAT) \n " +
             "Cédric ROMéRO \n" +
             "Philippe GAVOIS",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS3').subscribe(() => {
@@ -380,7 +388,7 @@ WA.onInit().then(() => {
             "Intervenants : Marielle MORIZOT \n " +
             "Mathieu FROIDURE \n " +
             "(Président de la société URBILOG)\n ",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS4').subscribe(() => {
@@ -392,7 +400,7 @@ WA.onInit().then(() => {
             "(CPO de la plateforme Tandemz)\n" +
             "Alice TAPIA \n" +
             "(UX/UI designer)",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS5').subscribe(() => {
@@ -410,7 +418,7 @@ WA.onInit().then(() => {
             "(FST) \n" +
             "Jean-François Javel \n" +
             "(DSA)",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS6.1').subscribe(() => {
@@ -420,18 +428,18 @@ WA.onInit().then(() => {
             "(Directrice Innovation FabLab INETUM)\n" +
             "Jean-Paul MULLER \n" +
             "(Global Practice Manager INETUM)\n",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
 
     WA.room.area.onEnter('librarySignTTS7').subscribe(() => {
-    currentPopup = WA.ui.openPopup("librarySignPopupTTS7",
-        "Ressources de TTS N°7 : L'automatisation dans les projets applicatifs, accelerateur devsecops d'aujourdh'ui et de demain\n" +
-        "Intervenants :Rémi RAPENNE \n" +
-        "Frédéric ROULET\n" +
-        "Ludovic PIOT \n",
-        [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
-});
+        currentPopup = WA.ui.openPopup("librarySignPopupTTS7",
+            "Ressources de TTS N°7 : L'automatisation dans les projets applicatifs, accelerateur devsecops d'aujourdh'ui et de demain\n" +
+            "Intervenants :Rémi RAPENNE \n" +
+            "Frédéric ROULET\n" +
+            "Ludovic PIOT \n",
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
+    });
 
     WA.room.area.onEnter('librarySignTTS8').subscribe(() => {
         currentPopup = WA.ui.openPopup("librarySignPopupTTS8",
@@ -440,7 +448,7 @@ WA.onInit().then(() => {
             "(Digital Factory)\n" +
             "Agnès CHATELLE \n" +
             "(Direction Digitale)\n",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS6.2').subscribe(() => {
@@ -454,8 +462,8 @@ WA.onInit().then(() => {
             "(expert stratégie et exécution DATA & IA)\n" +
             "Marième LOUGADI \n" +
             "Franck GRANDMAIRE \n" +
-            "(Equipe industrialisation de QTS (Qualité Transformation Sécurité))" ,
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            "(Equipe industrialisation de QTS (Qualité Transformation Sécurité))",
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('librarySignTTS9').subscribe(() => {
@@ -463,7 +471,7 @@ WA.onInit().then(() => {
             "Ressources de TTS N°9 : Les cas d'usage de la Blockchain\n" +
             "Intervenants : Théotime PINON\n" +
             "(Cabinet de conseil OCTO)\n",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('welcomeZone').subscribe(() => {
@@ -478,7 +486,7 @@ WA.onInit().then(() => {
             "\n" +
             "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
             "de votre clavier",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('welcomeZone2').subscribe(() => {
@@ -493,17 +501,17 @@ WA.onInit().then(() => {
             "\n" +
             "Vous pouvez également partager votre humeur en appuyant sur les touches 1 à 6 \n" +
             "de votre clavier",
-            [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('libraryIndication').subscribe(() => {
         currentPopup = WA.ui.openPopup("libraryIndicationPopup",
-            "Bienvenue dans les archives des TTS 2021",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            "Bienvenue dans les archives des TTS 2021", [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onEnter('officeIndicationZone').subscribe(() => {
         currentPopup = WA.ui.openPopup("officeIndicationPopup",
-            "Suivez ce chemin jusqu'au bout et prenez en haut \n pour atteindre nos bureaux ",  [{ label: "Fermer", className: "primary", callback: () => {closePopup()}}]);
+            "Suivez ce chemin jusqu'au bout et prenez en haut \n pour atteindre nos bureaux ", [{ label: "Fermer", className: "primary", callback: () => { closePopup() } }]);
     });
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
@@ -557,9 +565,9 @@ function convertToICSDate(dateTime: Date): string {
 }
 
 function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
-                               title: string, description: string, venueName: string,
-                               address: string, city: string) {
-    const icsBody = 
+    title: string, description: string, venueName: string,
+    address: string, city: string) {
+    const icsBody =
         'BEGIN:VCALENDAR\n' +
         'X-WR-TIMEZONE:Romance Standard Time\n' +
         'VERSION:2.0\n' +
@@ -576,8 +584,8 @@ function createDownloadICSFile(timezone: string, startTime: Date, endTime: Date,
         'STATUS:CONFIRMED\n' +
         'TRANSP:TRANSPARENT\n' +
         'DTSTART;TZID=' + timezone + ':' + convertToICSDate(startTime) + '\n' +
-        'DTEND;TZID=' + timezone + ':' + convertToICSDate(endTime)+ '\n' +
-        'DTSTAMP:'+ convertToICSDate(new Date()) + '\n' +
+        'DTEND;TZID=' + timezone + ':' + convertToICSDate(endTime) + '\n' +
+        'DTSTAMP:' + convertToICSDate(new Date()) + '\n' +
         'LOCATION:' + venueName + '\\n' + " " + address + ', ' + " " + city + ', ' + '\n' +
         'DESCRIPTION:' + description + '\n' +
         'END:VEVENT\n' +
@@ -595,7 +603,7 @@ function closePopup() {
     }
 }
 
-export {};
+export { };
 
 
 
